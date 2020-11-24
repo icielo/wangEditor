@@ -138,9 +138,9 @@ class UploadImg {
                 return
             }
 
-            if (/\.(jpg|jpeg|png|bmp|gif|webp)$/i.test(name) === false) {
+            if (/\.(jpg|jpeg|png|bmp|gif|webp|mp4|mkv|avi|rm|rmvb)$/i.test(name) === false) {
                 // 后缀名不合法，不是图片
-                errInfos.push(`【${name}】${t('不是图片')}`)
+                errInfos.push(`【${name}】${t('不是图片或视频')}`)
                 return
             }
 
